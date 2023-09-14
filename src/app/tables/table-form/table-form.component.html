@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-toolbar color="accent">
+      Add Table
+    </mat-toolbar>
+    <mat-card-content>
+      <form [formGroup]="form">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Table Number" formControlName="number">
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+          <button mat-button (click)="onCancel()">Cancel</button>
+        </mat-card-actions>
+      </form>
+  </mat-card-content>
+</mat-card>
